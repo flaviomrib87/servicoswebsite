@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estores Pro – Reparação de Estores</title>
+  <meta name="description" content="Reparação e instalação de estores manuais e elétricos. Orçamentos rápidos." />
+  <link rel="alternate" hreflang="en" href="../en/index.html" />
+  <link rel="alternate" hreflang="pt" href="./index.html" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="fixed top-0 z-20 w-full bg-white/90 backdrop-blur shadow-sm">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="font-bold text-lg">Estores Pro</a>
+      <nav class="flex items-center gap-2">
+        <a href="#servicos" class="px-3 py-2 rounded-xl border border-gray-300 hover:bg-gray-100">Serviços</a>
+        <a href="#contactos" class="px-3 py-2 rounded-xl border border-gray-300 hover:bg-gray-100">Contactos</a>
+        <!-- Toggle idioma -->
+        <a href="../en/index.html" class="px-3 py-2 rounded-xl bg-black text-white hover:bg-gray-900" hreflang="en" rel="alternate">🇬🇧 EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-28 pb-10">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-semibold leading-tight mb-4">Reparação de Estores manuais e elétricos</h1>
+        <p class="text-gray-600 mb-6">Substituição de fitas, motores e componentes. Serviço rápido com garantia.</p>
+        <div class="flex gap-3">
+          <a href="#contactos" class="px-5 py-3 rounded-xl bg-black text-white hover:bg-gray-900">📞 912 345 678</a>
+          <a href="#servicos" class="px-5 py-3 rounded-xl border border-gray-300 hover:bg-gray-100">Ver Serviços</a>
+        </div>
+      </div>
+      <img src="../assets/hero-estores.jpg" alt="Técnico a reparar estore" class="w-full aspect-[16/10] object-cover rounded-2xl shadow bg-gray-200" />
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="py-10">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6">Serviços</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-semibold text-lg mb-2">Reparação de Estores</h3>
+          <p class="text-gray-600">Troca de fitas, molas, manivelas e lâminas.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-semibold text-lg mb-2">Motores e Automação</h3>
+          <p class="text-gray-600">Instalação e substituição de motores e comandos.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-semibold text-lg mb-2">Instalação de Estores</h3>
+          <p class="text-gray-600">PVC, alumínio e térmicos à medida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contactos -->
+  <section id="contactos" class="py-12">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-2xl shadow p-6 md:p-8">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Contactos</h2>
+        <ul class="text-gray-700 space-y-1 mb-6">
+          <li>📞 912 345 678</li>
+          <li>✉️ info@empresa.pt</li>
+          <li>📍 Loures, Lisboa</li>
+        </ul>
+        <a href="../en/index.html" class="inline-block text-sm text-blue-700 underline mt-2">Preferes inglês? Vai para a versão EN →</a>
+      </div>
+      <iframe class="rounded-2xl w-full h-80 shadow" src="https://maps.google.com/maps?q=loures&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer class="px-4 py-8 text-center text-gray-500">© <span id="ano"></span> Estores Pro</footer>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>

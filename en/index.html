@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estores Pro – Shutter Repair</title>
+  <meta name="description" content="Repair and installation of manual and electric shutters. Fast quotes." />
+  <link rel="alternate" hreflang="en" href="./index.html" />
+  <link rel="alternate" hreflang="pt" href="../pt/index.html" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="fixed top-0 z-20 w-full bg-white/90 backdrop-blur shadow-sm">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="font-bold text-lg">Estores Pro</a>
+      <nav class="flex items-center gap-2">
+        <a href="#services" class="px-3 py-2 rounded-xl border border-gray-300 hover:bg-gray-100">Services</a>
+        <a href="#contact" class="px-3 py-2 rounded-xl border border-gray-300 hover:bg-gray-100">Contact</a>
+        <!-- Language toggle -->
+        <a href="../pt/index.html" class="px-3 py-2 rounded-xl bg-black text-white hover:bg-gray-900" hreflang="pt" rel="alternate">🇵🇹 PT</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-28 pb-10">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-semibold leading-tight mb-4">Manual & electric shutter repair</h1>
+        <p class="text-gray-600 mb-6">Replacement of tapes, motors and components. Fast service with warranty.</p>
+        <div class="flex gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-xl bg-black text-white hover:bg-gray-900">📞 912 345 678</a>
+          <a href="#services" class="px-5 py-3 rounded-xl border border-gray-300 hover:bg-gray-100">View Services</a>
+        </div>
+      </div>
+      <img src="../assets/hero-estores.jpg" alt="Technician repairing a shutter" class="w-full aspect-[16/10] object-cover rounded-2xl shadow bg-gray-200" />
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-10">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6">Services</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-semibold text-lg mb-2">Shutter Repair</h3>
+          <p class="text-gray-600">Tape, spring, crank and slat replacement.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-semibold text-lg mb-2">Motors & Automation</h3>
+          <p class="text-gray-600">Installation and replacement of tubular motors and remotes.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-semibold text-lg mb-2">New Installations</h3>
+          <p class="text-gray-600">PVC, aluminium and thermal shutters made to measure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-2xl shadow p-6 md:p-8">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Contact</h2>
+        <ul class="text-gray-700 space-y-1 mb-6">
+          <li>📞 912 345 678</li>
+          <li>✉️ info@empresa.pt</li>
+          <li>📍 Loures, Lisbon</li>
+        </ul>
+        <a href="../pt/index.html" class="inline-block text-sm text-blue-700 underline mt-2">Preferes português? Vai para a versão PT →</a>
+      </div>
+      <iframe class="rounded-2xl w-full h-80 shadow" src="https://maps.google.com/maps?q=loures&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer class="px-4 py-8 text-center text-gray-500">© <span id="year"></span> Estores Pro</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
